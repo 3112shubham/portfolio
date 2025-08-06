@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Portfolio Viewer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Portfolio Viewer</h1>
+        
+        <div class="user-selector">
+            <label for="user-dropdown">Select a User:</label>
+            <select id="user-dropdown">
+                <option value="">-- Select User --</option>
+            </select>
+        </div>
+        
+        <div id="portfolio-container" class="portfolio-container">
+            <div class="portfolio-placeholder">
+                <p>Select a user from the dropdown to view their portfolio</p>
+            </div>
+            
+            <div class="portfolio-content hidden">
+                <div class="user-header">
+                    <img id="user-image" src="" alt="User Image" class="user-image">
+                    <div class="user-info">
+                        <h2 id="user-name"></h2>
+                        <p id="user-profession" class="profession"></p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-details">
+                    <h3>About</h3>
+                    <p id="user-bio"></p>
+                    
+                    <h3>Skills</h3>
+                    <p id="user-skills"></p>
+                    
+                    <h3>Contact</h3>
+                    <p id="user-email"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
